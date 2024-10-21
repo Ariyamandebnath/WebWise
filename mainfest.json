@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "WebWise Child Browser Tracker",
+  "version": "1.0",
+  "permissions": ["history", "tabs", "storage", "activeTab", "webRequest", "webRequestBlocking"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": ["*://*/*"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
