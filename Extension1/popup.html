@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebWise Browser Tracker</title>
+    <style>
+      /* Base styling for body */
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #9bcbeb;
+        margin: 0;
+        padding: 20px;
+        width: 320px;
+        box-sizing: border-box;
+        color: #333;
+      }
+
+      /* Heading styles */
+      h1 {
+        font-size: 20px ;
+        text-align: center;
+        color: #000203 ;
+        margin-bottom: 20px;
+      }
+
+      /* List styling */
+      ul {
+        padding: 0;
+        list-style-type: none;
+      }
+
+      /* List item styling */
+      li {
+        background-color: white;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 15px;
+        padding: 15px;
+        border-radius: 10px;
+        transition: box-shadow 0.3s ease;
+      }
+
+      li:hover {
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+      }
+
+      /* URL / Search term styling */
+      .url {
+        font-weight: 600;
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 5px;
+      }
+
+      /* Video thumbnail styling */
+      img {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+
+      /* Time information styling */
+      .time {
+        font-size: 13px;
+        color: #888;
+      }
+
+      /* Mobile responsiveness */
+      @media (max-width: 320px) {
+        body {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Browsing Activity</h1>
+    <ul id="activityList"></ul>
+    <script src="popup.js"></script>
+  </body>
+</html>
